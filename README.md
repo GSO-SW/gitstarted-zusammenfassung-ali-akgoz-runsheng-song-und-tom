@@ -19,13 +19,22 @@
 Diese Befehle werden verwendet, wenn man lokal (auf dem eigenen Rechner) mit Git arbeitet:
 
 ```bash
-git init                    # Neues lokales Git-Repository erstellen
+git init                   # Neues lokales Git-Repository erstellen
 git status                 # Zeigt den aktuellen Status der Arbeitsverzeichnisse
 git add .                  # Stellt alle Dateien zur Aufnahme bereit
 git commit -m "Nachricht"  # Änderungen speichern mit Kommentar
 git log                    # Zeigt den Verlauf der Commits an
 git merge <branch>         # Merge eines Branches in den aktuellen
 git merge --abort          # Merge-Konflikt abbrechen
+git rebase <branch>        # Spielt die eigenen Commits auf den neuesten Stand von branch ab.
+   ➤ Vorteil: Saubere lineare Historie.
+   ⚠️ Achtung: Nur bei lokalen Branches verwenden, die **noch nicht gepusht** wurden.
+git cherry-pick <commit>   # Übernimmt einen bestimmten Commit aus einem anderen Branch.
+   ➤ Nützlich, um gezielt Änderungen zu übertragen.
+   ⚠️ Mögliche Konflikte, wenn sich der Kontext geändert hat.
+git reset --hard <commit>  # Setzt den aktuellen Branch auf einen bestimmten Commit zurück und verwirft Änderungen.
+  - ➤ Kann zum "Zurückspringen" verwendet werden.
+  - ⚠️ Achtung: Verwirft Änderungen **endgültig**, wenn sie nicht gespeichert wurden.
 ```
 
 Hinweis: Nutzt `git status`, um Fehler wie ungestagte Dateien zu vermeiden. Vor dem Commit immer `git add` verwenden.
@@ -58,7 +67,3 @@ Hinweis: Nutzt `git status`, um Fehler wie ungestagte Dateien zu vermeiden. Vor 
 - Listen mit `-` oder `*`
 - Codeblöcke mit ```bash
 - Tabellen mit dem [Generator](https://www.tablesgenerator.com/markdown_tables)
-
-
-
-
