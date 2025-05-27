@@ -31,3 +31,14 @@ git merge --abort          # Merge-Konflikt abbrechen
 Hinweis: Nutzt `git status`, um Fehler wie ungestagte Dateien zu vermeiden. Vor dem Commit immer `git add` verwenden.
 
 
+## Befehle – Entfernte Arbeit
+
+- `git clone <url>`: Klont ein Remote-Repository.
+- `git remote -v`: Zeigt die verbundenen Remotes an.
+- `git fetch`: Holt Änderungen vom Remote, integriert sie aber nicht.
+- `git pull`: Holt und integriert Remote-Änderungen.
+- `git push`: Überträgt lokale Änderungen ins Remote-Repository.
+- `git branch -r`: Zeigt entfernte Branches an.
+- `git push -u origin <branch>`: Setzt den Upstream-Branch.
+
+
