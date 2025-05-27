@@ -1,16 +1,9 @@
-## Git-Befehle – **lokale Arbeit**
+## Zusammenarbeit im Team
 
-Diese Befehle werden verwendet, wenn man lokal (auf dem eigenen Rechner) mit Git arbeitet:
+- **Branches für jede Person**: Jeder erstellt einen eigenen Branch (z. B. `feature-name`), um unabhängig zu arbeiten.
+- **Commit-Nachrichten**: Aussagekräftige Nachrichten wie `fix: behoben Fehler beim Login` oder `feat: neues Layout hinzugefügt`.
+- **Regelmäßige Pushes**: Mindestens 1× pro Arbeitssitzung pushen, um Fortschritt transparent zu machen.
+- **Merge-Strategie**: Merge nur nach erfolgreichem Pull & Test, um Konflikte zu vermeiden.
 
-```bash
-git init                    # Neues lokales Git-Repository erstellen
-git status                 # Zeigt den aktuellen Status der Arbeitsverzeichnisse
-git add .                  # Stellt alle Dateien zur Aufnahme bereit
-git commit -m "Nachricht"  # Änderungen speichern mit Kommentar
-git log                    # Zeigt den Verlauf der Commits an
-git merge <branch>         # Merge eines Branches in den aktuellen
-git merge --abort          # Merge-Konflikt abbrechen
-```
 
-Hinweis: Nutzt `git status`, um Fehler wie ungestagte Dateien zu vermeiden. Vor dem Commit immer `git add` verwenden.
 
