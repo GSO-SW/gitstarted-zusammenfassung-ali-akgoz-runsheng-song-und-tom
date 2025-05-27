@@ -28,13 +28,13 @@ git merge <branch>         # Merge eines Branches in den aktuellen
 git merge --abort          # Merge-Konflikt abbrechen
 git rebase <branch>        # Spielt die eigenen Commits auf den neuesten Stand von branch ab.
    ➤ Vorteil: Saubere lineare Historie.
-   ⚠️ Achtung: Nur bei lokalen Branches verwenden, die **noch nicht gepusht** wurden.
+   ⚠️ Achtung: Nur bei lokalen Branches verwenden, die noch nicht gepusht wurden.
 git cherry-pick <commit>   # Übernimmt einen bestimmten Commit aus einem anderen Branch.
    ➤ Nützlich, um gezielt Änderungen zu übertragen.
    ⚠️ Mögliche Konflikte, wenn sich der Kontext geändert hat.
 git reset --hard <commit>  # Setzt den aktuellen Branch auf einen bestimmten Commit zurück und verwirft Änderungen.
   - ➤ Kann zum "Zurückspringen" verwendet werden.
-  - ⚠️ Achtung: Verwirft Änderungen **endgültig**, wenn sie nicht gespeichert wurden.
+  - ⚠️ Achtung: Verwirft Änderungen endgültig, wenn sie nicht gespeichert wurden.
 ```
 
 Hinweis: Nutzt `git status`, um Fehler wie ungestagte Dateien zu vermeiden. Vor dem Commit immer `git add` verwenden.
